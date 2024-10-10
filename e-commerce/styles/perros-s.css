@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body {
+    height: 100%;
+    background-color: #f5f7fa; /* Color más suave */
+}
+
+.menu-btn {
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff7e6; /* Tono cálido, agradable */
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    color: #ff6f61;
+    border-bottom: 4px solid #ffb74d;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li a:hover {
+    transition: color 0.5s ease;
+    border-bottom: 4px solid #ff6f61;
+    color: #ff6f61;
+}
+
+.content {
+    background-image: url(../assets/photo-1534361960057-19889db9621e.jpg); /* Imagen de fondo con temática de perros */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: red;
+    height: 100vh;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #ff6f61;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pheading {
+    text-align: center;
+    margin: 50px 0;
+    color: #424144;
+}
+
+/* Productos */
+.sec {
+    padding: 10px 5%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Para que se vean más grandes los productos */
+    gap: 20px;
+}
+
+.products .card {
+    height: 350px;
+    width: 250px;
+    background: #fff7e6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.products .card:hover {
+    transform: scale(1.05);
+}
+
+.products .card img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.products .card .title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price {
+    color: #ff6f61;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.products .card .box .btn {
+    font-size: 14px;
+    color: #ff6f61;
+    padding: 10px 18px;
+    font-weight: bold;
+    border: 1px solid #ff6f61;
+    border-radius: 20px;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Pie de página */
+footer {
+    background-color: #fff7e6;
+    height: 10vh;
+}
+
+footer p {
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+}

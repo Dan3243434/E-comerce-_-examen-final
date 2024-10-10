@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+body{
+    height: 100%;
+    background-color: #141414;
+}
+
+
+.menu-btn{
+  color: #424144;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color:  #1f1f1f;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo h1{
+    color: #f3f4f6;
+    border-bottom: 4px solid #fd6561;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #f3f4f6;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.navbar .menu li a i{
+    color: #f3f4f6;
+}
+
+.navbar .menu li a i:hover{
+    transition:  color 0.5s ease;
+    color: #f63e4e;
+}
+
+.navbar .menu li a:hover{
+    transition: color 0.5s ease;
+    transition-duration: 900ms;
+    transition-property: border-bottom;
+    border-bottom: 4px solid #f63e4e;
+    color: #f63e4e;
+}
+
+/*content*/
+
+.content{
+    background-image: url(../assets/Diseño\ sin\ título\ \(1\).jpg);
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100%;
+    border-bottom: 4px solid #424144;
+
+}
+
+
+.content .texto{
+    margin-top: 350px;
+    color: #f3f4f6;
+    margin-bottom: 320px;
+    margin-right: 30em;
+    
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+}
+
+/*products*/
+
+.categorias h2{
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.icono{
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center;     /* Centra los íconos verticalmente */
+    gap: 25px;               /* Espacio entre los íconos */
+    margin: 40px;
+    font-size: 2.8em;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+
+.sec{
+    padding: 10px 5%;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+}
+
+.products .card{
+    height: 310px;
+    width: 204px;
+    background: #1f1f1f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.products .card img{
+    height: 170px;
+    width: 100%;
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.products .card .box{
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price{
+    display: flex;
+    color: #f63e4e;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: right;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+
+/*footer*/
+footer{
+    background-color: #1f1f1f;
+    height: 10vh;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+}
+
